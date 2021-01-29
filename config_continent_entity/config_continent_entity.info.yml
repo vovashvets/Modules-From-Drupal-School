@@ -1,0 +1,5 @@
+name: 'Continent Country Config Entities'
+type: module
+description: 'Provides Continent and Country config entities.'
+package: Custom
+core_version_requirement: ^8 || ^9

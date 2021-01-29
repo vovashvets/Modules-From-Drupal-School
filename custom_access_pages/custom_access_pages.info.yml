@@ -1,0 +1,5 @@
+name: Custom Access Pages
+type: module
+description: 'Custom Access Pages demonstrates different access type on pages'
+package: Shvets
+core_version_requirement: ^8 || ^9

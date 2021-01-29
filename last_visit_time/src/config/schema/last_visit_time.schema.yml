@@ -1,0 +1,7 @@
+last_visit_time.settings:
+  type: config_object
+  label: 'Last visit time settings'
+  mapping:
+    format:
+      type: string
+      label: 'Date Format'

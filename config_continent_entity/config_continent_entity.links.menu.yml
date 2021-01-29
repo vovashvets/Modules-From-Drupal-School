@@ -1,0 +1,9 @@
+continent.menu:
+  parent: system.admin_structure
+  title: Continent
+  route_name: entity.continent.list
+
+country.menu:
+  parent: system.admin_structure
+  title: Country
+  route_name: entity.country.list

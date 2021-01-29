@@ -1,0 +1,5 @@
+name: Switch Checkbox widget
+type: module
+description: Custom switch checkbox widget for boolean field type.
+package: Custom
+core_version_requirement: ^8 || ^9

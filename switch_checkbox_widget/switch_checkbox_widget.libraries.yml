@@ -1,0 +1,5 @@
+switch-checkbox:
+  version: VERSION
+  css:
+    component:
+      assets/css/switch_checkbox.css: {}

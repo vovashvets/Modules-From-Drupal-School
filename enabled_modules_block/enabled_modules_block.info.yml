@@ -1,0 +1,5 @@
+name: Enabled Modules Block
+type: module
+description: 'Provides list of enabled modules in a block'
+package: Shvets
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,7 @@
+user_information_form.main_form:
+  path: '/user-information-form'
+  defaults:
+    _form:  'Drupal\user_information_form\Form\UserInformationForm'
+    _title: 'User Information Form'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+user_information_form.menu_link:
+  title: 'User Information Form'
+  description: 'User Information Form page'
+  route_name: user_information_form.main_form
+  menu_name: 'main'
+  weight: 55

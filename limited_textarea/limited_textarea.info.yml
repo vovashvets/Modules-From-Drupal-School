@@ -1,0 +1,5 @@
+name: Limited Textarea Widget
+type: module
+description: 'Provides widget type for text field which shows the limit of symbols. Limit can be changed in widget settings.'
+package: Shvets
+core_version_requirement: ^8 || ^9

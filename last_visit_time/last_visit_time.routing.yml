@@ -1,0 +1,7 @@
+last_visit_time.settings:
+  path: '/admin/config/people/last-visited-time'
+  defaults:
+    _form: '\Drupal\last_visit_time\Form\LastVisitTimeConfigForm'
+    _title: 'Last access time'
+  requirements:
+    _permission: 'administer site configuration'

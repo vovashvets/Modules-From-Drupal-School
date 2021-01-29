@@ -1,0 +1,91 @@
+# This is the router item for listing all continents.
+entity.continent.list:
+  path: '/admin/structure/continents'
+  defaults:
+    # '_entity_list' tells Drupal to use an entity list controller.
+    # We give the entity ID here. Drupal then looks in the entity's annotation
+    # and looks for the "list" entry under "controllers" for the class to load.
+    # @see \Drupal\Core\Entity\Enhancer\EntityRouteEnhancer
+    _entity_list: continent
+    _title: 'Continents (Config Entity)'
+  requirements:
+    _permission: 'administer continents'
+
+# This is the router item for adding continent.
+entity.continent.add_form:
+  path: '/admin/structure/continents/add'
+  defaults:
+    _title: 'Add continent'
+    # Like _entity_list above, _entity_form gives the entity type ID, only this
+    # time also lists the form separated by a period. Drupal looks in the
+    # annotation for the entity and locates the "add" entry under "form" for
+    # the form class to load.
+    # @see \Drupal\Core\Entity\Enhancer\EntityRouteEnhancer
+    _entity_form: continent.add
+  requirements:
+    _entity_create_access: continent
+
+# This is the router item for editing continent.
+entity.continent.edit_form:
+  # Parameters may be passed to the form via the URL path. We name the
+  # parameter in the path by enclosing it in curly braces. For entity forms,
+  # we include the entity ID in the path by including a parameter with the
+  # same name as the entity type ID.
+  path: '/admin/structure/ontinents/manage/{continent}'
+  defaults:
+    _title: 'Edit continent'
+    # List our add entry above, this _entity_form entry instructs Drupal to
+    # read our entity type's annonation, and look for the "edit" entry under
+    # "form".
+    _entity_form: continent.edit
+  requirements:
+    # This uses our entity access controller.
+    # @see \Drupal\Core\Entity\EntityAccessCheck
+    _entity_access: continent.update
+
+# This is the router item for deleting an instance of our entity.
+entity.continent.delete_form:
+  path: '/admin/structure/continents/manage/{continent}/delete'
+  defaults:
+    _title: 'Delete continent'
+    _entity_form: continent.delete
+  requirements:
+    _entity_access: continent.delete
+
+# This is the router item for listing all countries.
+entity.country.list:
+  path: '/admin/structure/countries'
+  defaults:
+    _entity_list: country
+    _title: 'Countries (Config Entity)'
+  requirements:
+    _permission: 'administer countries'
+
+# This is the router item for adding country.
+entity.country.add_form:
+  path: '/admin/structure/countries/add'
+  defaults:
+    _title: 'Add country'
+    _entity_form: country.add
+  requirements:
+    _entity_create_access: country
+
+# This is the router item for editing country.
+entity.country.edit_form:
+  path: '/admin/structure/countries/manage/{country}'
+  defaults:
+    _title: 'Edit country'
+    _entity_form: country.edit
+  requirements:
+    # This uses our entity access controller.
+    # @see \Drupal\Core\Entity\EntityAccessCheck
+    _entity_access: country.update
+
+# This is the router item for deleting an instance of our entity.
+entity.country.delete_form:
+  path: '/admin/structure/countries/manage/{country}/delete'
+  defaults:
+    _title: 'Delete country'
+    _entity_form: country.delete
+  requirements:
+    _entity_access: country.delete

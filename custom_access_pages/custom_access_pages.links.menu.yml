@@ -1,0 +1,20 @@
+custom_access_pages.regular_link:
+  title: 'Regular User Page'
+  description: 'Page for regular users'
+  route_name: custom_access_pages.regular
+  menu_name: 'main'
+  weight: 53
+
+custom_access_pages.anonymous_link:
+  title: 'Anonymous User Page'
+  description: 'Page for anonymous users'
+  route_name: custom_access_pages.anonymous
+  menu_name: 'main'
+  weight: 54
+
+custom_access_pages.random_link:
+  title: 'Random User Page'
+  description: 'Page for random users'
+  route_name: custom_access_pages.random
+  menu_name: 'main'
+  weight: 55

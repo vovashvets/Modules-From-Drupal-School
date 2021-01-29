@@ -1,0 +1,37 @@
+.input-switch-checkbox[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.input-switch-checkbox + label.option {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 5em;
+  height: 2.7em;
+  background: grey;
+  display: block;
+  border-radius: 3em;
+  position: relative;
+}
+
+.input-switch-checkbox + label:after {
+  content: '';
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  width: 2em;
+  height: 2em;
+  background: #fff;
+  border-radius: 2em;
+  transition: 0.3s;
+}
+
+.input-switch-checkbox:checked + label {
+  background: #bada55;
+}
+
+.input-switch-checkbox:checked + label:after {
+  left: calc(100% - 0.4em);
+  transform: translateX(-100%);
+}

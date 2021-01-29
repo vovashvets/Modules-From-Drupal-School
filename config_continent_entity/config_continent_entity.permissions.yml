@@ -1,0 +1,9 @@
+#Define the administer permission for the continent config entity.
+'administer continents':
+  title: 'Administer continents'
+  description: Create and edit continents.
+
+#Define the administer permission for the country config entity.
+'administer countries':
+  title: 'Administer countries'
+  description: Create and edit countries.

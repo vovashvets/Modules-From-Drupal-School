@@ -1,0 +1,5 @@
+name: 'Event Content Entity'
+type: module
+description: 'Module demonstrates Event content entity.'
+package: Custom
+core_version_requirement: ^8 || ^9

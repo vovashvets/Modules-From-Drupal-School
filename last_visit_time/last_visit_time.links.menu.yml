@@ -1,0 +1,6 @@
+last_visit_time.admin_form:
+  title: 'Last Visited Time block format settings'
+  parent: system.admin_config_development
+  description: "Configure date format for last visited time block."
+  weight: 0
+  route_name: last_visit_time.settings

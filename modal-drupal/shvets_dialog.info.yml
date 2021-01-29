@@ -1,0 +1,6 @@
+name: Shvets Modal Dialog
+type: module
+description: Demonstrates modal dialog form.
+package: Shvets
+core: 8.x
+core_version_requirement: ^8 || ^9

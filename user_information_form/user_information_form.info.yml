@@ -1,0 +1,5 @@
+name: User Information Form
+type: module
+description: 'User Information Form is example of Form API.'
+package: Shvets
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,5 @@
+shvets_dialog.menu:
+  parent: system.admin_structure
+  title: Shvets Modal Dialog Form Example
+  route_name: shvets_dialog.shvets_dialog
+

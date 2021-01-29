@@ -1,0 +1,7 @@
+entity.event.collection:
+  title: 'Events'
+  route_name: entity.event.collection
+  description: 'List Event entities'
+  parent: system.admin_structure
+  weight: -10
+

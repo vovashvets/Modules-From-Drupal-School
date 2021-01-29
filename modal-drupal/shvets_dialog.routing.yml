@@ -1,0 +1,7 @@
+shvets_dialog.shvets_dialog:
+  path: '/shvets-dialog-form'
+  defaults:
+    _form: '\Drupal\shvets_dialog\Form\ShvetsOpenModalDialog'
+    _title: 'Routing page title'
+  requirements:
+    _permission: 'administer site configuration'

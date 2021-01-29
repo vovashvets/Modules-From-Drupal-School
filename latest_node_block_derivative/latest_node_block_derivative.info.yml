@@ -1,0 +1,5 @@
+name: 'Latest Nodes Block'
+type: module
+description: 'Provides block with latest nodes of chosen content type.'
+package: Shvets
+core_version_requirement: ^8 || ^9

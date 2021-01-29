@@ -1,0 +1,20 @@
+custom_access_pages.regular:
+  path: /regular-user-info
+  defaults:
+    _controller: Drupal\custom_access_pages\Controller\RegularUserController::regularUserRender
+  requirements:
+    _permission: 'access content'
+
+custom_access_pages.anonymous:
+  path: /anonymous-user-info
+  defaults:
+    _controller: Drupal\custom_access_pages\Controller\AnonymousController::anonymousUserRender
+  requirements:
+    _user_is_logged_in: 'false'
+
+custom_access_pages.random:
+  path: /random-user-info
+  defaults:
+    _controller: Drupal\custom_access_pages\Controller\RandomUserController::randomUserRender
+  requirements:
+    _custom_access: Drupal\custom_access_pages\Controller\RandomUserController::access

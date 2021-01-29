@@ -1,0 +1,27 @@
+# Add continent local task links to facilitate navigation.
+continent.add_action:
+  route_name: entity.continent.add_form
+  title: 'Add continent'
+  appears_on:
+    - entity.continent.list
+
+continent.list_action:
+  route_name: entity.continent.list
+  title: 'List continents'
+  appears_on:
+    - entity.continent.add_form
+    - entity.continent.edit_form
+
+# Add country local task links to facilitate navigation.
+country.add_action:
+  route_name: entity.country.add_form
+  title: 'Add country'
+  appears_on:
+    - entity.country.list
+
+country.list_action:
+  route_name: entity.country.list
+  title: 'List countries'
+  appears_on:
+    - entity.country.add_form
+    - entity.country.edit_form

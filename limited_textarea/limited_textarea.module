@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ * @param $element
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $context
+ */
+
+// Hook to add attributes and attach library to widget
+//function limited_textarea_field_widget_limited_textarea_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+//  $element['value']['#attributes']['id'][] = 'limited-textarea';
+//  $element['value']['#attributes']['maxlength'] = $context['widget']->getSetting('limit');
+//  $element['value']['#attached']['library'][] = 'limited_textarea/limited_textarea_style';
+//  $element['value']['#suffix'] = '<div id="symbol-limit-wrapper">
+//                      <span id="symbol-count">0</span>
+//                      <span id="symbol-limit">/</span>
+//                  </div>';
+//}
